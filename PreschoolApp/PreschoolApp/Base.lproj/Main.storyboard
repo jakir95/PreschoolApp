@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreschoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plate_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="LTg-wg-Ahn">
+                                <rect key="frame" x="0.0" y="438" width="375" height="229"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-x4-bOo">
+                                <rect key="frame" x="20" y="39" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number0.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXQ-Ro-PfX">
+                                <rect key="frame" x="88" y="39" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-2k-oh5">
+                                <rect key="frame" x="157" y="39" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNb-ks-3tA">
+                                <rect key="frame" x="230" y="39" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number3.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm2-SA-4dc">
+                                <rect key="frame" x="298" y="39" width="60" height="60"/>
+                                <state key="normal" image="number4.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-rH-kR1">
+                                <rect key="frame" x="88" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number6.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-qD-GdR">
+                                <rect key="frame" x="20" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number5.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-r9-dCM">
+                                <rect key="frame" x="157" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number7.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-Lx-x8z">
+                                <rect key="frame" x="230" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number8.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-gx-Bd6">
+                                <rect key="frame" x="303" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number9.png"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="dG5-nT-5v5" customClass="DraggedImageView" customModule="PreschoolApp" customModuleProvider="target">
+                                <rect key="frame" x="101" y="466" width="75" height="71"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308.5" y="397.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.png" width="256" height="256"/>
+        <image name="number0.png" width="256" height="256"/>
+        <image name="number1.png" width="256" height="256"/>
+        <image name="number2.png" width="256" height="256"/>
+        <image name="number3.png" width="256" height="256"/>
+        <image name="number4.png" width="256" height="256"/>
+        <image name="number5.png" width="256" height="256"/>
+        <image name="number6.png" width="256" height="256"/>
+        <image name="number7.png" width="256" height="256"/>
+        <image name="number8.png" width="256" height="256"/>
+        <image name="number9.png" width="256" height="256"/>
+        <image name="plate_white.png" width="1600" height="1200"/>
+    </resources>
+</document>
