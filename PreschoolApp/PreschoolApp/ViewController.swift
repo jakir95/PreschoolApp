@@ -9,10 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+
+    
+    @IBOutlet weak var numAText: UILabel!
+ 
+    @IBOutlet weak var numBText: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let numA = String(arc4random_uniform(5))
+        let numB = String(arc4random_uniform(5))
+        
+        numAText.text = numA
+        numBText.text = numB
+        
     }
 
     override func didReceiveMemoryWarning() {
