@@ -55,16 +55,6 @@
                                     <action selector="fourButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jq-7k-mxh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-rH-kR1">
-                                <rect key="frame" x="88" y="116" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="V6l-tB-D1M"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="number6.png"/>
-                                <connections>
-                                    <action selector="sixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqo-mp-4rv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-qD-GdR">
                                 <rect key="frame" x="20" y="116" width="60" height="60"/>
                                 <state key="normal" title="Button" image="number5.png"/>
@@ -84,13 +74,6 @@
                                 <state key="normal" title="Button" image="number8.png"/>
                                 <connections>
                                     <action selector="eightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pj-1o-baM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-gx-Bd6">
-                                <rect key="frame" x="303" y="116" width="60" height="60"/>
-                                <state key="normal" title="Button" image="number9.png"/>
-                                <connections>
-                                    <action selector="nineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MjQ-oK-9Me"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="dG5-nT-5v5" customClass="DraggedImageView" customModule="PreschoolApp" customModuleProvider="target">
@@ -150,6 +133,20 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="U7h-GS-PsU" customClass="DraggedImageView" customModule="PreschoolApp" customModuleProvider="target">
                                 <rect key="frame" x="211" y="517" width="75" height="71"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzC-IC-f5F">
+                                <rect key="frame" x="86" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number6.png"/>
+                                <connections>
+                                    <action selector="sixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxa-j1-Qdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-gx-Bd6">
+                                <rect key="frame" x="298" y="116" width="60" height="60"/>
+                                <state key="normal" title="Button" image="number9.png"/>
+                                <connections>
+                                    <action selector="nineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MjQ-oK-9Me"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
