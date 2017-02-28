@@ -12,70 +12,72 @@ class ViewController: UIViewController {
     
 
     
+    @IBOutlet weak var box: UIView!
+    
     @IBOutlet weak var numAText: UILabel!
  
     @IBOutlet weak var numBText: UILabel!
     
     @IBOutlet weak var questionmark: UILabel!
 
-    
+    //let CorrectAnswerPage = ViewController(nibName: 2, bundle: nil)
 
+    
     
     let numA = arc4random_uniform(5)
     let numB = arc4random_uniform(5)
     
 
     @IBAction func zeroButton(sender: UIButton) {
-        if checkAnswer(0) { /* ToDo*/}
+        if checkAnswer(0) {CorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
     
     @IBAction func oneButton(sender: UIButton) {
-      if checkAnswer(1) { /* ToDo*/}
+        if checkAnswer(1) {CorrectAnswerPage()}
       else { wrongAnswerAnimation()}
     }
     
     @IBAction func twoButton(sender: UIButton) {
-       if checkAnswer(2) { /* ToDo*/}
+        if checkAnswer(2) {CorrectAnswerPage()}
        else { wrongAnswerAnimation()}
     }
     
     @IBAction func threeButton(sender: UIButton) {
-        if checkAnswer(3) { /* ToDo*/}
+        if checkAnswer(3) {CorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
     
     @IBAction func fourButton(sender: UIButton) {
-        if checkAnswer(4) { /* ToDo*/}
+        if checkAnswer(4) {  CorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
    
     @IBAction func fiveButton(sender: UIButton) {
-         if checkAnswer(5) { /* ToDo*/}
+         if checkAnswer(5) { CorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func sixButton(sender: UIButton) {
-          if checkAnswer(6) { /* ToDo*/}
+          if checkAnswer(6) { CorrectAnswerPage()}
           else { wrongAnswerAnimation()}
         
     }
 
     @IBAction func sevenButton(sender: UIButton) {
-         if checkAnswer(7) { /* ToDo*/}
+         if checkAnswer(7) { CorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func eightButton(sender: UIButton) {
-         if checkAnswer(8) { /* ToDo*/}
+         if checkAnswer(8) { CorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func nineButton(sender: UIButton) {
-         if checkAnswer(9) { /* ToDo*/}
+         if checkAnswer(9) { CorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
-    
     
     
     func checkAnswer(a: UInt32) ->Bool {
@@ -84,6 +86,12 @@ class ViewController: UIViewController {
         else {return false}
 
     }
+    
+    func CorrectAnswerPage(){
+        self.performSegueWithIdentifier("CorrectAnswerPage", sender: self)
+    }
+    
+    
     func wrongAnswerAnimation(){
         questionmark.alpha = 0.0
         questionmark.textColor = UIColor.redColor()
@@ -97,7 +105,7 @@ class ViewController: UIViewController {
         
         numAText.text = String(numA)
         numBText.text = String(numB)
-        //redQuestionMark.textColor = UIColor.redColor()
+        view.sendSubviewToBack(box)
         
         
     }

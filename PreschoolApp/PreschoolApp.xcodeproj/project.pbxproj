@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C228D7D1E5F1C56002DCC95 /* CorrectAnswerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */; };
 		4C3E5E2E1E51FD1200589E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E5E2D1E51FD1200589E95 /* AppDelegate.swift */; };
 		4C3E5E301E51FD1200589E95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E5E2F1E51FD1200589E95 /* ViewController.swift */; };
 		4C3E5E331E51FD1200589E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E5E311E51FD1200589E95 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		4C3E5E791E52014000589E95 /* star_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E5E691E52014000589E95 /* star_kids.png */; };
 		4C3E5E7A1E52014000589E95 /* thumbs_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E5E6A1E52014000589E95 /* thumbs_up.png */; };
 		4C3E5E7C1E5205AF00589E95 /* DraggedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E5E7B1E5205AF00589E95 /* DraggedImageView.swift */; };
+		4CF00DB61E5F626200549748 /* FlashingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF00DB51E5F626200549748 /* FlashingAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectAnswerPage.swift; sourceTree = "<group>"; };
 		4C3E5E2A1E51FD1200589E95 /* PreschoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreschoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3E5E2D1E51FD1200589E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C3E5E2F1E51FD1200589E95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		4C3E5E691E52014000589E95 /* star_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_kids.png; path = images/star_kids.png; sourceTree = "<group>"; };
 		4C3E5E6A1E52014000589E95 /* thumbs_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbs_up.png; path = images/thumbs_up.png; sourceTree = "<group>"; };
 		4C3E5E7B1E5205AF00589E95 /* DraggedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggedImageView.swift; sourceTree = "<group>"; };
+		4CF00DB51E5F626200549748 /* FlashingAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		4C3E5E211E51FD1200589E95 = {
 			isa = PBXGroup;
 			children = (
+				4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */,
 				4C3E5E2C1E51FD1200589E95 /* PreschoolApp */,
 				4C3E5E411E51FD1200589E95 /* PreschoolAppTests */,
 				4C3E5E4C1E51FD1300589E95 /* PreschoolAppUITests */,
@@ -133,6 +138,7 @@
 			children = (
 				4C3E5E2D1E51FD1200589E95 /* AppDelegate.swift */,
 				4C3E5E2F1E51FD1200589E95 /* ViewController.swift */,
+				4CF00DB51E5F626200549748 /* FlashingAnimation.swift */,
 				4C3E5E311E51FD1200589E95 /* Main.storyboard */,
 				4C3E5E7B1E5205AF00589E95 /* DraggedImageView.swift */,
 				4C3E5E5B1E52014000589E95 /* apple.png */,
@@ -325,8 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3E5E301E51FD1200589E95 /* ViewController.swift in Sources */,
+				4C228D7D1E5F1C56002DCC95 /* CorrectAnswerPage.swift in Sources */,
 				4C3E5E7C1E5205AF00589E95 /* DraggedImageView.swift in Sources */,
 				4C3E5E2E1E51FD1200589E95 /* AppDelegate.swift in Sources */,
+				4CF00DB61E5F626200549748 /* FlashingAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +561,7 @@
 				4C3E5E541E51FD1300589E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C3E5E551E51FD1300589E95 /* Build configuration list for PBXNativeTarget "PreschoolAppTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +570,7 @@
 				4C3E5E571E51FD1300589E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C3E5E581E51FD1300589E95 /* Build configuration list for PBXNativeTarget "PreschoolAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +579,7 @@
 				4C3E5E5A1E51FD1300589E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
