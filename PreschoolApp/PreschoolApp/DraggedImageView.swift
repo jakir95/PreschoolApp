@@ -12,6 +12,9 @@ class DraggedImageView: UIImageView {
     var startLocation: CGPoint?
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+            
+            
+            
         startLocation = touches.first?.locationInView(self)
     }
     
@@ -22,5 +25,25 @@ class DraggedImageView: UIImageView {
         let dy = currentLocation!.y - startLocation!.y
         
         self.center = CGPointMake(self.center.x+dx, self.center.y+dy)
+        
+        let halfx = CGRectGetMidX(self.bounds)
+        self.center.x = max(halfx, self.center.x)
+        self.center.x = min(self.superview!.bounds.size.width-halfx, self.center.x)
+        
+        let halfy = CGRectGetMidY(self.bounds)
+        self.center.y = max(halfy, self.center.y)
+        self.center.y = min(self.superview!.bounds.size.height-halfy, self.center.y)
+
     }
+    
+ 
+
+
+
+
+
+
+
+
+
 }

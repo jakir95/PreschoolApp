@@ -29,53 +29,53 @@ class ViewController: UIViewController {
     
 
     @IBAction func zeroButton(sender: UIButton) {
-        if checkAnswer(0) {CorrectAnswerPage()}
+        if checkAnswer(0) {sendToCorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
     
     @IBAction func oneButton(sender: UIButton) {
-        if checkAnswer(1) {CorrectAnswerPage()}
+        if checkAnswer(1) {sendToCorrectAnswerPage()}
       else { wrongAnswerAnimation()}
     }
     
     @IBAction func twoButton(sender: UIButton) {
-        if checkAnswer(2) {CorrectAnswerPage()}
+        if checkAnswer(2) {sendToCorrectAnswerPage()}
        else { wrongAnswerAnimation()}
     }
     
     @IBAction func threeButton(sender: UIButton) {
-        if checkAnswer(3) {CorrectAnswerPage()}
+        if checkAnswer(3) {sendToCorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
     
     @IBAction func fourButton(sender: UIButton) {
-        if checkAnswer(4) {  CorrectAnswerPage()}
+        if checkAnswer(4) {  sendToCorrectAnswerPage()}
         else { wrongAnswerAnimation()}
     }
    
     @IBAction func fiveButton(sender: UIButton) {
-         if checkAnswer(5) { CorrectAnswerPage()}
+         if checkAnswer(5) { sendToCorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func sixButton(sender: UIButton) {
-          if checkAnswer(6) { CorrectAnswerPage()}
+          if checkAnswer(6) { sendToCorrectAnswerPage()}
           else { wrongAnswerAnimation()}
         
     }
 
     @IBAction func sevenButton(sender: UIButton) {
-         if checkAnswer(7) { CorrectAnswerPage()}
+         if checkAnswer(7) { sendToCorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func eightButton(sender: UIButton) {
-         if checkAnswer(8) { CorrectAnswerPage()}
+         if checkAnswer(8) { sendToCorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
     @IBAction func nineButton(sender: UIButton) {
-         if checkAnswer(9) { CorrectAnswerPage()}
+         if checkAnswer(9) { sendToCorrectAnswerPage()}
          else { wrongAnswerAnimation()}
     }
     
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
 
     }
     
-    func CorrectAnswerPage(){
+    func sendToCorrectAnswerPage(){
         self.performSegueWithIdentifier("CorrectAnswerPage", sender: self)
     }
     
@@ -97,6 +97,14 @@ class ViewController: UIViewController {
         questionmark.textColor = UIColor.redColor()
 
         UIView.animateWithDuration(0.2, delay: 0.1, options: .CurveEaseOut, animations:{self.questionmark.alpha = 1} , completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let result = numA + numB
+        let desViewcontroller:CorrectAnswerPage = segue.destinationViewController as! CorrectAnswerPage
+        desViewcontroller.resNumAText = numAText.text!
+        desViewcontroller.resNumBText = numBText.text!
+        desViewcontroller.ansText = String(result)
     }
     
     override func viewDidLoad() {

@@ -12,7 +12,19 @@ import UIKit
 class CorrectAnswerPage: UIViewController {
     
     
-    @IBOutlet weak var flashingStar: UIView!
+    @IBOutlet weak var resNumA: UILabel!
+    
+    @IBOutlet weak var resNumB: UILabel!
+    
+    @IBOutlet weak var ans: UILabel!
+    
+    var resNumAText = String()
+    var resNumBText = String()
+    var ansText = String()
+    
+    
+    
+    @IBOutlet weak var flashingStar: UIImageView!
   
     @IBOutlet weak var flashingStar2: UIImageView!
     
@@ -31,6 +43,7 @@ class CorrectAnswerPage: UIViewController {
     
     
     func flashingStarAnimation(){
+
         
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
             self.flashingStar.alpha = 1.0
@@ -49,16 +62,21 @@ class CorrectAnswerPage: UIViewController {
                 completion: {(Completed : Bool) -> Void in self.flashingStarAnimation()
             })
         })
+        
     }
-
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         flashingStarAnimation()
+        
+        resNumA.text = resNumAText
+        resNumB.text = resNumBText
+        ans.text = ansText
+        
+        
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

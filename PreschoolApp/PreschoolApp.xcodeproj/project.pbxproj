@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectAnswerPage.swift; sourceTree = "<group>"; };
+		4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectAnswerPage.swift; path = ../CorrectAnswerPage.swift; sourceTree = "<group>"; };
 		4C3E5E2A1E51FD1200589E95 /* PreschoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreschoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3E5E2D1E51FD1200589E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C3E5E2F1E51FD1200589E95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 		4C3E5E211E51FD1200589E95 = {
 			isa = PBXGroup;
 			children = (
-				4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */,
 				4C3E5E2C1E51FD1200589E95 /* PreschoolApp */,
 				4C3E5E411E51FD1200589E95 /* PreschoolAppTests */,
 				4C3E5E4C1E51FD1300589E95 /* PreschoolAppUITests */,
@@ -139,8 +138,9 @@
 				4C3E5E2D1E51FD1200589E95 /* AppDelegate.swift */,
 				4C3E5E2F1E51FD1200589E95 /* ViewController.swift */,
 				4CF00DB51E5F626200549748 /* FlashingAnimation.swift */,
-				4C3E5E311E51FD1200589E95 /* Main.storyboard */,
 				4C3E5E7B1E5205AF00589E95 /* DraggedImageView.swift */,
+				4C3E5E311E51FD1200589E95 /* Main.storyboard */,
+				4C228D7C1E5F1C56002DCC95 /* CorrectAnswerPage.swift */,
 				4C3E5E5B1E52014000589E95 /* apple.png */,
 				4C3E5E5C1E52014000589E95 /* number0.png */,
 				4C3E5E5D1E52014000589E95 /* number1.png */,

@@ -9,7 +9,21 @@
 import UIKit
 
 class FlashingAnimation: UIImageView {
-
       //  UIView.animateWithDuration(0.2, delay: 0.1, options: .CurveEaseOut, animations:{self.alpha = 1} , completion: nil)
+    
+    func FlashingAnimation(){
+    
+    UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+    self.alpha = 1.0}, completion: {(Completed:Bool) -> Void in
+    
+    
+    UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
+    self.alpha = 0.0},
+    completion: {(Completed : Bool) -> Void in self.FlashingAnimation()
+    })
+    })
+
+    }
+
 
 }
