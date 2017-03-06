@@ -41,26 +41,84 @@ class CorrectAnswerPage: UIViewController {
     
     
     
-    
     func flashingStarAnimation(){
 
         
-        UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
-            self.flashingStar.alpha = 1.0
-            self.flashingStar2.alpha = 1.0
-            self.flashingStar3.alpha = 1.0
-            self.flashingStar4.alpha = 1.0
-            self.flashingStar5.alpha = 1.0}, completion: {(Completed:Bool) -> Void in
+        UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+            self.flashingStar.alpha = 1.0}, completion: {(Completed:Bool) -> Void in
             
             
-            UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
-                self.flashingStar.alpha = 0.0
-                self.flashingStar2.alpha = 0.0
-                self.flashingStar3.alpha = 0.0
-                self.flashingStar4.alpha = 0.0
-                self.flashingStar5.alpha = 0.0},
+            UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveLinear, animations: {
+                self.flashingStar.alpha = 0.0},
                 completion: {(Completed : Bool) -> Void in self.flashingStarAnimation()
             })
+        })
+        
+    }
+    
+    func flashingStarAnimation2(){
+        
+        
+        UIView.animateWithDuration(0.4, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+            self.flashingStar2.alpha = 1.0
+            }, completion: {(Completed:Bool) -> Void in
+                
+                
+                UIView.animateWithDuration(0.4, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations: {
+                    self.flashingStar2.alpha = 0.0
+                    },
+                    completion: {(Completed : Bool) -> Void in self.flashingStarAnimation2()
+                })
+        })
+        
+    }
+    
+    func flashingStarAnimation3(){
+        
+        
+        UIView.animateWithDuration(0.4, delay: 0.3, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+            self.flashingStar3.alpha = 1.0
+            }, completion: {(Completed:Bool) -> Void in
+                
+                
+                UIView.animateWithDuration(0.4, delay: 0.3, options: UIViewAnimationOptions.CurveLinear, animations: {
+                    self.flashingStar3.alpha = 0.0
+                    },
+                    completion: {(Completed : Bool) -> Void in self.flashingStarAnimation3()
+                })
+        })
+        
+    }
+    
+    func flashingStarAnimation4(){
+        
+        
+        UIView.animateWithDuration(0.4, delay: 0.4, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+            self.flashingStar4.alpha = 1.0
+            }, completion: {(Completed:Bool) -> Void in
+                
+                
+                UIView.animateWithDuration(0.4, delay: 0.4, options: UIViewAnimationOptions.CurveLinear, animations: {
+                    self.flashingStar4.alpha = 0.0
+                    },
+                    completion: {(Completed : Bool) -> Void in self.flashingStarAnimation4()
+                })
+        })
+        
+    }
+    func flashingStarAnimation5(){
+        
+        
+        UIView.animateWithDuration(0.4, delay: 0.2, options: UIViewAnimationOptions.CurveLinear, animations:{ () -> Void in
+            self.flashingStar5.alpha = 1.0
+            }, completion: {(Completed:Bool) -> Void in
+                
+                
+                UIView.animateWithDuration(0.4 , delay: 0.2, options: UIViewAnimationOptions.CurveLinear, animations: {
+                    self.flashingStar5.alpha = 0.0
+                    },
+                    completion: {(Completed : Bool) -> Void in self.flashingStarAnimation5()
+                })
         })
         
     }
@@ -70,6 +128,10 @@ class CorrectAnswerPage: UIViewController {
         super.viewDidLoad()
         
         flashingStarAnimation()
+        flashingStarAnimation2()
+        flashingStarAnimation3()
+        flashingStarAnimation4()
+        flashingStarAnimation5()
         
         resNumA.text = resNumAText
         resNumB.text = resNumBText

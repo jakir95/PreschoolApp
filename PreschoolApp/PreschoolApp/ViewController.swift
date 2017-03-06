@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     let numA = arc4random_uniform(5)
     let numB = arc4random_uniform(5)
     
+//    let W = UIScreen.mainScreen().bounds.width
+//    let H = UIScreen.mainScreen().bounds.height
 
     @IBAction func zeroButton(sender: UIButton) {
         if checkAnswer(0) {sendToCorrectAnswerPage()}
@@ -109,6 +111,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //UIScreen.setAccessibilityFrame(CGRectMake(W*0.05, H*0.2, W*0.1, H*0.2))
         // Do any additional setup after loading the view, typically from a nib.
         
         numAText.text = String(numA)

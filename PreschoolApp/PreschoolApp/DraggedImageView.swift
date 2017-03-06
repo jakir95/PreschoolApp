@@ -31,7 +31,7 @@ class DraggedImageView: UIImageView {
         self.center.x = min(self.superview!.bounds.size.width-halfx, self.center.x)
         
         let halfy = CGRectGetMidY(self.bounds)
-        self.center.y = max(halfy, self.center.y)
+        self.center.y = max(halfy*8.5, self.center.y)
         self.center.y = min(self.superview!.bounds.size.height-halfy, self.center.y)
 
     }
